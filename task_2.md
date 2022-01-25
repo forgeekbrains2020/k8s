@@ -13,6 +13,8 @@ _**1. In Minikube in namespace kube-system, there are many different pods runnin
 
 _**2. Implement Canary deployment of an application via Ingress. Traffic to canary deployment should be redirected if you add "canary:always" in the header, otherwise it should go to regular deployment. Set to redirect a percentage of traffic to canary deployment.**_
 
+_**2.1** _ "canary:always" in the header
+
 Ниже на изображении представлена сначала конфигурация Ingress **ingress-v2.yaml** . В которой в секции **anatations** задаются настройки для редиректа при наличии загаловка:
 
     kubernetes.io/ingress.class: "nginx"
@@ -32,6 +34,11 @@ _**2. Implement Canary deployment of an application via Ingress. Traffic to cana
 
 ![image](https://user-images.githubusercontent.com/72750543/150915036-048b5213-b401-4424-b504-e9912638132d.png)
 
+
+
+
+_**2.2**_  percentage of traffic to canary deployment
+![image](https://user-images.githubusercontent.com/72750543/150915468-56f7c562-f28c-40be-b085-848bb70ba218.png)
 
 
 
