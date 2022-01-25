@@ -39,9 +39,16 @@ _**2.1**_ "canary:always" in the header
 
 _**2.2**_  percentage of traffic to canary deployment
 
-Изменяем файл *ingress-v2.yaml**:
+Изменяем файл **ingress-v2.yaml**, в нем определили 25 % значение для редирект на новую версию:
 
 ![image](https://user-images.githubusercontent.com/72750543/150915468-56f7c562-f28c-40be-b085-848bb70ba218.png)
 
+Применил конфигурацию:
+
+![image](https://user-images.githubusercontent.com/72750543/150916121-5ac987bb-9085-4e2b-a448-7aedbcae10eb.png)
+
+Выполняю запросы. Видно, что из 5 запросов, только один пришелся на новую версию приложения:
+
+![image](https://user-images.githubusercontent.com/72750543/150916200-a2beb6e9-2bcb-43a5-ace9-6fa2c3b41127.png)
 
 
