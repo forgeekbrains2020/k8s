@@ -1,6 +1,6 @@
 # Homework Task #2
 
-1. In Minikube in namespace kube-system, there are many different pods running. Your task is to figure out who creates them, and who makes sure they are running (restores them after deletion).
+**1.** In Minikube in namespace kube-system, there are many different pods running. Your task is to figure out who creates them, and who makes sure they are running (restores them after deletion).
 
 За это отвечает kubelet. С помощью команды **kubectl describe pod -A** можно увидеть информацию о нужному поду:
 
