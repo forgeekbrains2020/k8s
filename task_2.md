@@ -24,7 +24,7 @@ _**2. Implement Canary deployment of an application via Ingress. Traffic to cana
     nginx.ingress.kubernetes.io/canary-by-header-value: "always"
     
 Также идет привязка к сервису web-2,  который связан с новой версией приложения.
-По запросу с заголовком curl **$(minikube ip) -H "(canary:always)"** отвечает новая версия приложения. Без заголвка, старая версия.
+По запросу с заголовком curl **$(minikube ip) -H "(canary:always)"** отвечает новая версия приложения.  На запрос без заголвка отвечает старая версия.
 
 ![image](https://user-images.githubusercontent.com/72750543/150913593-796e90f9-e76f-4bf6-9bf7-f61ac4832308.png)
 
