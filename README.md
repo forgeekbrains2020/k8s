@@ -2,8 +2,8 @@
 
 1. In Minikube in namespace kube-system, there are many different pods running. Your task is to figure out who creates them, and who makes sure they are running (restores them after deletion).
 За это отвечает kubelet. С помощью команды **kubectl describe pod -A** можно увидеть информацию о нужному поду:
+![image](https://user-images.githubusercontent.com/72750543/150912571-0558b923-ea63-4951-8435-e2a508d85aa8.png)
 
-![image](https://user-images.githubusercontent.com/72750543/150912225-ad1c201c-3e77-4ef9-9b77-3fcdf599a261.png)
 
 
 
