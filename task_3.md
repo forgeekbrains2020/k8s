@@ -22,3 +22,9 @@ _**1. We published minio "outside" using nodePort. Do the same but using ingress
 
 ![image](https://user-images.githubusercontent.com/72750543/151146576-519c3f21-7c01-479b-b07b-5bc90ef5f5e9.png)
 
+
+_**Create deploy with emptyDir save data to mountPoint emptyDir, delete pods, check data.**_
+
+Запустил pod dnsutils c emptyDir. Создал в каталоге /cache (mountPath) файл test. Удалил pod, проверил, что при создании pod-а в случае с emptyDir данных не сохранилось. 
+
+![image](https://user-images.githubusercontent.com/72750543/151161188-caf781ec-552f-4da5-a685-af044a99bb2f.png)
