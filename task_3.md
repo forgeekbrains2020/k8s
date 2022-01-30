@@ -25,6 +25,7 @@ _**1. We published minio "outside" using nodePort. Do the same but using ingress
 
 _**2. Publish minio via ingress so that minio by ip_minikube and nginx returning hostname (previous job) by path ip_minikube/web are available at the same time.**_
 
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -49,6 +50,7 @@ spec:
              name: minio
              port: 
                 number: 80
+
 
 
 _**3. Create deploy with emptyDir save data to mountPoint emptyDir, delete pods, check data.**_
