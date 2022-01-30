@@ -23,6 +23,34 @@ _**1. We published minio "outside" using nodePort. Do the same but using ingress
 ![image](https://user-images.githubusercontent.com/72750543/151146576-519c3f21-7c01-479b-b07b-5bc90ef5f5e9.png)
 
 
+_**2. Publish minio via ingress so that minio by ip_minikube and nginx returning hostname (previous job) by path ip_minikube/web are available at the same time.**_
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-minio
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+             name: minio
+             port: 
+                number: 80
+      - path: /web
+        pathType: Prefix
+        backend:
+          service:
+             name: minio
+             port: 
+                number: 80
+
+
 _**3. Create deploy with emptyDir save data to mountPoint emptyDir, delete pods, check data.**_
 
 Запустил pod dnsutils c emptyDir. Создал в каталоге /cache (mountPath) файл test. Удалил pod, проверил, что при создании pod-а в случае с emptyDir данных не сохранилось. 
