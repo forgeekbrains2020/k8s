@@ -41,4 +41,6 @@
 ![image](https://user-images.githubusercontent.com/72750543/152682358-864a5f84-ab5f-49c3-8326-d1a4b6f91eb3.png)
 
 
+
+
 ### 2. Create namespace prod. Create users prod_admin, prod_view. Give the user prod_admin admin rights on ns prod, give the user prod_view only view rights on namespace prod.
