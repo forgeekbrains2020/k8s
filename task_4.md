@@ -31,6 +31,11 @@
 ```kubectl config set-credentials deploy_view --client-certificate=deploy_view.crt --client-key=deploy_view.key```
 
 
+- Set context for users:
+```kubectl config set-context deploy_view --cluster=minikube --user=deploy_view```
+```kubectl config set-context deploy_edit --cluster=minikube --user=deploy_edit```
+
+
 - Create Role and RoleBinding  for deploy_view user:
 
 ![image](https://user-images.githubusercontent.com/72750543/152682280-635fe7f6-bf94-4749-b11b-91f95ba4352e.png)
