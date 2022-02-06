@@ -20,9 +20,11 @@ _**1. Create users deploy_view and deploy_edit. Give the user deploy_view rights
 - Sign the CSR in the Kubernetes CA. We have to use the CA certificate and the key, which are usually in /etc/kubernetes/pki. But since we use minikube, the certificates will be on the host machine in ~/.minikube:
 
 ```openssl x509 -req -in deploy_edit.csr -CA ~/.minikube/ca.crt -CAkey ~/.minikube/ca.key -CAcreateserial -out deploy_edit.crt -days 500```
+
 ```openssl x509 -req -in deploy_view.csr -CA ~/.minikube/ca.crt -CAkey ~/.minikube/ca.key -CAcreateserial -out deploy_view.crt -days 500```
 
 
 - Create users in kubernetes:
 ```kubectl config set-credentials deploy_view --client-certificate=deploy_view.crt --client-key=deploy_view.key```
+
 ```kubectl config set-credentials deploy_view --client-certificate=deploy_view.crt --client-key=deploy_view.key```
