@@ -3,6 +3,7 @@
 
 _**1. Create users deploy_view and deploy_edit. Give the user deploy_view rights only to view deployments, pods. Give the user deploy_edit full rights to the objects deployments, pods.**_
 
+
 - Create private key for users deploy_view, deploy_edit:
 
 ```openssl genrsa -out deploy_view.key 2048```
@@ -21,3 +22,11 @@ _**1. Create users deploy_view and deploy_edit. Give the user deploy_view rights
 ```openssl x509 -req -in deploy_edit.csr -CA ~/.minikube/ca.crt -CAkey ~/.minikube/ca.key -CAcreateserial -out deploy_edit.crt -days 500```
 ```openssl x509 -req -in deploy_view.csr -CA ~/.minikube/ca.crt -CAkey ~/.minikube/ca.key -CAcreateserial -out deploy_view.crt -days 500```
 
+- Create users in kubernetes:
+``````
+``````
+
+
+- Create users in kubernetes:
+```kubectl config set-credentials deploy_view --client-certificate=deploy_view.crt --client-key=deploy_view.key```
+```kubectl config set-credentials deploy_view --client-certificate=deploy_view.crt --client-key=deploy_view.key```
