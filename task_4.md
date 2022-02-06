@@ -51,3 +51,10 @@
 
 
 ### 2. Create namespace prod. Create users prod_admin, prod_view. Give the user prod_admin admin rights on ns prod, give the user prod_view only view rights on namespace prod.
+
+- Create namespace prod:
+
+```kubectl create ns prod```
+
+- Create users prod_admin, prod_view. Аналогично первому задание. Весь листинг здесь не приводится.
+
