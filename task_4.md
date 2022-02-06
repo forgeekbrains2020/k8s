@@ -58,3 +58,7 @@
 
 - Create users prod_admin, prod_view. Аналогично первому задание. Весь листинг здесь не приводится.
 
+
+- Create Role and RoleBinding  for users:
+
+![image](https://user-images.githubusercontent.com/72750543/152685430-0a9303a8-df9e-4148-bea3-d76c66520f98.png)
