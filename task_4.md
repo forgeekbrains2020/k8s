@@ -25,6 +25,7 @@ _**1. Create users deploy_view and deploy_edit. Give the user deploy_view rights
 
 
 - Create users in kubernetes:
+
 ```kubectl config set-credentials deploy_view --client-certificate=deploy_view.crt --client-key=deploy_view.key```
 
 ```kubectl config set-credentials deploy_view --client-certificate=deploy_view.crt --client-key=deploy_view.key```
