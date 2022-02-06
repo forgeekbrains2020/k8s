@@ -91,3 +91,9 @@
 ![image](https://user-images.githubusercontent.com/72750543/152687789-cc6e8230-5b8c-4c16-9fc3-7948611a2898.png)
 
 
+- Role Bindins  с правами admin:
+
+![image](https://user-images.githubusercontent.com/72750543/152687894-031c9582-bb22-41be-8f19-24cbd9657a94.png)
+
+
+
