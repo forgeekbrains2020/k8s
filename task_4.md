@@ -83,4 +83,11 @@
 ![image](https://user-images.githubusercontent.com/72750543/152686717-f972b886-c81a-4601-bc11-bd778a86fc04.png)
 
 
+- Изменим количество реплик на 4:
+![image](https://user-images.githubusercontent.com/72750543/152687723-624e3548-c645-41fe-b130-0646686babb2.png)
+
+- Создан еще один pod:
+
+![image](https://user-images.githubusercontent.com/72750543/152687789-cc6e8230-5b8c-4c16-9fc3-7948611a2898.png)
+
 
