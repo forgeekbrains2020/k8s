@@ -35,5 +35,11 @@ _**1. Create users deploy_view and deploy_edit. Give the user deploy_view rights
 
 ![image](https://user-images.githubusercontent.com/72750543/152682280-635fe7f6-bf94-4749-b11b-91f95ba4352e.png)
 
+
+- Create Role and RoleBinding  for deploy_edit user:
+
+![image](https://user-images.githubusercontent.com/72750543/152682358-864a5f84-ab5f-49c3-8326-d1a4b6f91eb3.png)
+
+
 ``````
 ``````
