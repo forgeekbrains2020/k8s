@@ -3,7 +3,21 @@
 
 _**1. Create users deploy_view and deploy_edit. Give the user deploy_view rights only to view deployments, pods. Give the user deploy_edit full rights to the objects deployments, pods.**_
 
-Create private key for users deploy_view, deploy_edit:
+- Create private key for users deploy_view, deploy_edit:
 
 ```openssl genrsa -out deploy_view.key 2048```
+
 ```openssl genrsa -out deploy_edit.key 2048```
+
+
+- Create a certificate signing request:
+
+```openssl req -new -key deploy_view.key -out deploy_view.csr --subj "/CN=deploy_view"```
+
+```openssl req -new -key deploy_edit.key -out deploy_edit.csr --subj "/CN=deploy_edit"```
+
+- Sign the CSR in the Kubernetes CA. We have to use the CA certificate and the key, which are usually in /etc/kubernetes/pki. But since we use minikube, the certificates will be on the host machine in ~/.minikube:
+
+```openssl x509 -req -in deploy_edit.csr -CA ~/.minikube/ca.crt -CAkey ~/.minikube/ca.key -CAcreateserial -out deploy_edit.crt -days 500```
+```openssl x509 -req -in deploy_view.csr -CA ~/.minikube/ca.crt -CAkey ~/.minikube/ca.key -CAcreateserial -out deploy_view.crt -days 500```
+
