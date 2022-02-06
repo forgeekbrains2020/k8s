@@ -74,6 +74,9 @@
 ![image](https://user-images.githubusercontent.com/72750543/152685610-687931c3-9cf1-4981-a6cd-8fb961907b7f.png)
 
 
+У prod_view  не хватает прав  удалить deployment.
+
+
 
 
 
