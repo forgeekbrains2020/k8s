@@ -33,6 +33,7 @@
 
 - Set context for users:
 ```kubectl config set-context deploy_view --cluster=minikube --user=deploy_view```
+
 ```kubectl config set-context deploy_edit --cluster=minikube --user=deploy_edit```
 
 
