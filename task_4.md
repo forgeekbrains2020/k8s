@@ -62,3 +62,20 @@
 - Create Role and RoleBinding  for users:
 
 ![image](https://user-images.githubusercontent.com/72750543/152685430-0a9303a8-df9e-4148-bea3-d76c66520f98.png)
+
+- Switch to context "prod_admin" and create deployment:
+
+![image](https://user-images.githubusercontent.com/72750543/152685526-a83fa280-4f0e-423a-862b-af428f74dd1d.png)
+
+Деплоймент успешно создан.
+
+- Switch to context "prod_view" and try delete deployment.
+
+![image](https://user-images.githubusercontent.com/72750543/152685610-687931c3-9cf1-4981-a6cd-8fb961907b7f.png)
+
+
+
+
+
+
+- 
