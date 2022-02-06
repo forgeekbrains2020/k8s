@@ -29,3 +29,11 @@ _**1. Create users deploy_view and deploy_edit. Give the user deploy_view rights
 ```kubectl config set-credentials deploy_view --client-certificate=deploy_view.crt --client-key=deploy_view.key```
 
 ```kubectl config set-credentials deploy_view --client-certificate=deploy_view.crt --client-key=deploy_view.key```
+
+
+- Create Role and RoleBinding  for deploy_view user:
+
+![image](https://user-images.githubusercontent.com/72750543/152682280-635fe7f6-bf94-4749-b11b-91f95ba4352e.png)
+
+``````
+``````
