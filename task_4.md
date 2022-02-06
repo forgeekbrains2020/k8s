@@ -76,9 +76,11 @@
 
 У prod_view  не хватает прав  удалить deployment.
 
+### 4. Create a serviceAccount sa-namespace-admin. Grant full rights to namespace default. Create context, authorize using the created sa, check accesses.
+
+- Create a serviceAccount sa-namespace-admin. Get secret for serviceAccount sa-namespace-admin.
+
+![image](https://user-images.githubusercontent.com/72750543/152686717-f972b886-c81a-4601-bc11-bd778a86fc04.png)
 
 
 
-
-
-- 
